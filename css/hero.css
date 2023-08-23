@@ -1,27 +1,201 @@
 .hero {
-  /* text-align: center;
-    padding: 18rem 0; */
+  text-align: center;
+  padding: 12rem 0 5rem;
+}
+.hero-block {
+  margin-bottom: 3rem;
+}
+.hero .title {
+  max-width: 60rem;
+  margin: 0 auto 1rem;
+}
+.hero .text {
+  max-width: 30rem;
+  margin: 0 auto 2rem;
+}
+.hero-img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 130rem;
+  max-height: 40rem;
+  object-fit: cover;
+  border-radius: 6rem;
+}
+
+.contacts,
+.question,
+.policy {
+  padding: 10rem 0;
+  text-align: center;
+}
+.contacts-block {
+  padding: 3rem 1rem;
+  border: 0.2rem solid var(--first-brand-color);
+  border-radius: 4rem;
+}
+.contacts-block .sub-title,
+.question .sub-title,
+.policy .sub-title {
+  margin-bottom: 8rem;
+}
+.contacts-svg-box {
+  background-color: var(--second-brand-color);
+  width: 4rem;
+  height: 6rem;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+}
+.contacts-item:nth-child(2) .contacts-svg-box {
+  background-color: var(--third-brand-color);
+}
+.contacts-item:last-child .contacts-svg-box {
+  background-color: var(--fourth-brand-color);
+}
+.contacts-span {
+  font-size: 1.5rem;
+  font-family: var(--main-title-font);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.contacts-svg {
+  fill: var(--sub-text-color);
+}
+
+.question__wrapper {
+  background-color: var(--first-brand-color);
+}
+.question-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.question-sub-title,
+.policy-item-title {
+  font-size: 1.5rem;
+  font-family: var(--main-title-font);
+  margin-bottom: 1rem;
 }
 
 .policy {
-  /* padding: 12rem 0;
-    text-align: center; */
+  padding: 10rem 0;
+  text-align: center;
 }
-
-.contacts {
-  /* padding: 12rem 0;
-    text-align: center; */
+.policy-img-block {
+  display: none;
 }
-
-.question {
-  /* padding: 12rem 0;
-    text-align: center; */
+.policy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  max-width: 40rem;
+  margin: 0 auto;
 }
-
-.phrase {
-  /* padding: 15rem 0;
-  text-align: center; */
+.policy-item .text {
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 1440px) {
+  .hero {
+    padding-top: 10rem;
+  }
+  .hero-img {
+    border-radius: 20rem;
+  }
+
+  .contacts-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contacts-item {
+    width: 30%;
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+    justify-content: center;
+  }
+  .contacts-svg-box {
+    margin: 0 1rem 0 0;
+    -webkit-box-shadow: 0rem 1rem 2rem 0rem rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0rem 1rem 2rem 0rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0rem 1rem 2rem 0rem rgba(0, 0, 0, 0.2);
+  }
+  .contacts-block {
+    padding: 5rem 3rem;
+  }
+
+  .question-list {
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 90%;
+  }
+  .question-item {
+    background-color: var(--main-bg-color);
+    width: 30%;
+    padding: 20rem 5rem 8rem;
+    border-radius: 20rem;
+    position: relative;
+  }
+  .question-item::before {
+    position: absolute;
+    content: '?';
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-color: var(--second-brand-color);
+    color: var(--sub-text-color);
+    font-family: var(--main-title-font);
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-box-shadow: 0rem 1rem 2rem 0rem rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0rem 1rem 2rem 0rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0rem 1rem 2rem 0rem rgba(0, 0, 0, 0.2);
+  }
+  .question-item:nth-child(2)::before {
+    background-color: var(--third-brand-color);
+  }
+  .question-item:last-child::before {
+    background-color: var(--fourth-brand-color);
+  }
+
+  .policy {
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    padding: 10rem 20rem;
+  }
+  .policy-img-block {
+    display: block;
+    position: relative;
+  }
+  .policy-img {
+    display: block;
+    width: 30rem;
+    height: 40rem;
+    object-fit: cover;
+    border-radius: 15rem;
+    -webkit-box-shadow: 0rem 1rem 2rem 0rem rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0rem 1rem 2rem 0rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0rem 1rem 2rem 0rem rgba(0, 0, 0, 0.2);
+  }
+  .policy-img:last-child {
+    position: absolute;
+    left: -20rem;
+    bottom: -5rem;
+  }
 }
