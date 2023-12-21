@@ -14,6 +14,7 @@ body.open-menu {
 .header__flex {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .header__btn {
@@ -88,11 +89,11 @@ body.open-menu {
 }
 
 .cart__btn {
-  display: none;
+  display: flex;
   align-items: center;
   border-radius: 1rem;
   width: fit-content;
-  margin: 0 auto;
+  margin-left: auto;
   padding: 1rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -117,6 +118,9 @@ body.open-menu {
   }
   .header {
     padding: 2rem 0;
+  }
+  .header__flex {
+    width: fit-content;
   }
   .nav__link {
     position: relative;
