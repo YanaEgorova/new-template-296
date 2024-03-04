@@ -198,4 +198,10 @@
     left: -20rem;
     bottom: -5rem;
   }
+
+  .policy-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
